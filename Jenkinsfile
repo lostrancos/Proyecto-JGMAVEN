@@ -3,20 +3,17 @@ pipeline {
     agent any
     
     stages {
-         
-        stage("Etapa1") {
-            steps{
-                sh "echo Soy la etapa 1"
+        stage("Etapa 1") {
+            steps {
+                sh "echo Etapa1"
             }
-         
-          stage("Etapa2") {
-            steps{
+        }
+        stage("Etapa 2") {
+            steps {
                 sh """
-                echo Soy la etapa 2
-                echo Soy otra vez la etapa 2
+                echo Etapa2
                 """
             }
-         
-         }
-     }
+        }
+    }
 }
